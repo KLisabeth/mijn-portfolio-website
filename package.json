@@ -1,0 +1,27 @@
+{
+  "name": "mijn-portfolio-website",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KLisabeth/mijn-portfolio-website.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Kateryna Lisabeth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KLisabeth/mijn-portfolio-website/issues"
+  },
+  "homepage": "https://github.com/KLisabeth/mijn-portfolio-website#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  }
+}
