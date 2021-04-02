@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { RiMenu4Line } from "react-icons/ri";
 import { RiAdminLine } from "react-icons/ri";
 import { VscChromeClose } from "react-icons/vsc";
-import "./component.css"
+import "./components.css"
 import Logo from "./Logo";
 
 function Header() {

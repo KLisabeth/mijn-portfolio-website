@@ -24,19 +24,20 @@
     justify-content: space-between;
    }
   
-  #logo {
+   #logo {
     width: 160px;
     height:68px;
     float: left;
-    left: 10px;
-    margin-left: 40px;
-    cursor: pointer;
     font-family: "Aleo";
     font-size: 25px;
     font-weight: 500;
+    left: 10px;
+    margin-left: 40px;
     color: #837D7D;
     text-decoration: none;
+    cursor: pointer;   
    } 
+   
    #logo line{
     stroke: #10b9ab;
    }
@@ -96,7 +97,36 @@
      font-size: 3em;
      
    }
-   
+   /*Footer*/
+  
+   .footer {
+    background-color: #282c34;
+    max-height: 150px;
+    min-height: 60px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  
+  }
+
+  .copyright {
+    background-color: #282c34;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    color: #b9b6b6;
+    font-size: 16px;
+  }
+  .footer-icons{
+    width: 100%;
+    text-align: end;
+    padding: 1%;
+    background-color: #282c34;
+  }
+ 
    @media screen and (max-width: 990px) {
   
     /*Header*/
@@ -181,7 +211,10 @@
     .icon {
      font-size: 20px; 
     }
-   
+    /*Footer*/
+     .copyright {
+      font-size: 12px;
+    }
   
   }
   
@@ -199,5 +232,10 @@
     .icon {
      font-size: 18px; 
     }
-   
+
+   /*Footer*/
+
+   .copyright {
+     font-size: 10px;
+    }
   }
