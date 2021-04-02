@@ -63,7 +63,7 @@
      -webkit-background-clip: text;
    }
   .navbar-button{
-    font-family: "Playfair Display", italic;
+    font-family: "Aleo";
     font-size: 25px;
     text-align: left;
     color:#837D7D;
@@ -77,7 +77,6 @@
   
    .icon {
     color: #837D7D;
-     font-size: 1.5em;
      cursor: pointer;
      display: none;
      position: absolute;
@@ -90,11 +89,12 @@
      position: absolute;
      right: 30px;
      top: 20px;
+     font-size: 25px;
      font-weight: 400;
    }
   
    .icon:hover {
-     font-size: 3em;
+     font-size: 2em;
      
    }
    /*Footer*/
@@ -132,7 +132,7 @@
     /*Header*/
     .icon {
       display: block;
-      font-size: 2em;
+      font-size: 25px;
     }
   
     .icon .hide {
@@ -188,6 +188,10 @@
       margin: auto;
       font-size: 1.2rem;
     }
+    .icon.cancel-btn,
+    .rime {
+      font-size: 25px; 
+     }
    
     .rime {
       position: absolute;
@@ -208,8 +212,9 @@
     .Navbar .menu-list li {
       font-size: 35px;
     }
-    .icon {
-     font-size: 20px; 
+    .icon.cancel-btn,
+   .rime {
+     font-size: 18px; 
     }
     /*Footer*/
      .copyright {

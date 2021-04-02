@@ -1,0 +1,96 @@
+.icons {
+  border: none;
+  background: none;
+  margin: 20px;
+  font-size: 2rem;
+  display: inline-block;
+  padding: 20px;
+}
+
+  .icon{
+    margin: 5%;
+  }
+  
+  .icons a:hover {
+    transform: scale(1.5);
+  }
+  
+  .github {
+    font-size: 2rem;
+    color: black;
+  }
+  .twitter {
+    font-size: 2rem;
+    color: #0765d1;
+  }
+  .linkedin {
+    font-size: 2rem;
+    color: #f4f5f7;
+    background-color: #2b4f92;
+    border-radius: 5px;
+  }
+  
+  .instagram {
+    font-size: 2rem;
+    border-radius: 5px;
+    color: linen;
+    background-image: linear-gradient(to top right, #e2b00a, #eb1ab6, #0508c9);
+    margin-right: 15px;
+  }
+
+  @media screen and (max-width: 890px ) {
+
+  .icons {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    display: contents;
+  }
+  .icons a:hover {
+    transform: scale(1.5);
+  }
+  .twitter,
+  .linkedin,
+  .instagram,
+  .github {
+    font-size: 1.8rem;
+    margin: 10px;
+  }
+}
+@media only screen and (max-width: 680px) {
+    .icons a {
+        margin: 15px;
+        padding: 15px;
+        font-size: 0.9rem;
+        display: contents;
+      }
+      .icons a:hover {
+        transform: scale(1.5);
+      }
+      .twitter,
+      .linkedin,
+      .instagram,
+      .github {
+        font-size: 1.5rem;
+        margin: 7px;
+      }
+}
+@media screen and (max-width: 390px) {
+    .icons a {
+        margin: 10px;
+        padding: 10px;
+        font-size: 0.8em;
+        display: contents;
+      }
+      .icons a:hover {
+        transform: scale(1.5);
+      }
+   
+      .twitter,
+      .linkedin,
+      .instagram,
+      .github {
+        font-size: 1.3rem;
+        margin: 10px;
+      }
+}

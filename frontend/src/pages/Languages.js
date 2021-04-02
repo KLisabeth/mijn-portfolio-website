@@ -32,7 +32,7 @@ import LoadingCircleFigma from "../components/charts/LoadingCircleFigma";
 
 function Languages() {
   return (
-    <div>
+    <div className="language-page">
       <section className="language-container">
         <h3>Languages I use</h3>
         <div className="languages">

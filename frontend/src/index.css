@@ -131,6 +131,65 @@ code {
   max-height: 80px;
   max-width: 80px;
 }
+/*Contact-page*/
+
+.contact {
+  min-height: 100vh;
+  background: #282c34;
+  margin-top: -7px;
+}
+.contact_title{
+  font-size: 45px;
+  background: -webkit-linear-gradient(#05b3b9, #036964);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  text-align: center;
+}
+ .contact_card{
+ background: #282c34;
+} 
+.contact_form_wrap {
+  border-radius: 1rem;
+  max-width: 70%;
+  margin: -15% auto;
+  padding: 1%;
+  background: #303742fd;
+}
+.form-label {
+  color: #06b8af;
+  font-style: italic;
+  font-family: "Aleo";
+  font-weight: 200;
+  font-size: 1rem;
+}
+.contact_btn{
+  width: 100%;
+  border-radius: 50px;
+  color: #1be9e9;
+  border: 3px solid #098286;
+  background: #282c34;
+  font-size: 20px;
+  margin-top: 15px;
+  padding: 10px;
+  text-decoration: none;
+  letter-spacing:1px;
+  text-shadow:0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.envelop{
+  float: left;
+  font-size: 1.5em;
+  margin-left: 5%;
+}
+.contact_btn:hover{
+  background: linear-gradient(to top left, #4bd6e9, #0c6e86, #0b36f5);
+  color: #f0e5ec;
+  text-decoration: none;
+}
 
 @media screen and (max-width: 990px) {
   /*About-page*/
@@ -173,6 +232,7 @@ code {
   .about {
     height: auto;
     padding: 2px;
+    margin-top: -2px;
   }
   .about_title {
     font-size: 25px;
@@ -200,6 +260,9 @@ code {
     padding: 5px;
   }
   /*Language-page*/
+  .language-page{
+    margin-top: -2px;
+  }
   .languages {
     float: inline-start;
     width: 100%;
@@ -220,6 +283,24 @@ code {
     max-height: 35px;
     max-width: 35px;
   }
+    /*Contact*/
+  
+    .contact_form_wrap {
+      max-width: 95%;
+      margin: 2% auto;
+      padding: 2%;
+    }
+    .contact_title{
+     margin: 5px auto;
+     font-size: 30px;
+   }
+   .contact_btn{
+    font-size: 17px;
+  }
+  .envelop{
+    font-size: 1em; 
+  }
+ 
 }
 
 @media screen and (max-width: 360px) {
@@ -328,4 +409,9 @@ code {
   .language-container h3 {
     font-size: 20px;
   }
+     /*Contact*/
+    .contact_title{
+     font-size: 25px;
+   }
+  
 }
