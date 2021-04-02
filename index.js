@@ -5,6 +5,7 @@ import adminRoute from './backend/routes/adminRoute.js';
 import profileRoute from './backend/routes/profileRoute.js';
 import projectRoute from './backend/routes/projectRoute.js';
 import blogRoute from './backend/routes/blogRoute.js';
+import messageRoute from './backend/routes/messageRoute.js';
 dotenv.config();
 const app = express();
 
@@ -26,7 +27,12 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/admin", adminRoute);
 app.use("/api/profile", profileRoute);
 app.use("/api/project", projectRoute);
-app.use("/api/blog", blogRoute)
+app.use("/api/blog", blogRoute);
+app.use ("/api/message", messageRoute)
+
+app.use((err, req, res, next) => {
+  res.status(500).send({ message: err.message });
+});
 
 const port = process.env.PORT;
 

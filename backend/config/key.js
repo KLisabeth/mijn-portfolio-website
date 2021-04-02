@@ -9,5 +9,7 @@ export default {
   ADMIN: process.env.ADMIN,
   EMAIL: process.env.EMAIL,
   NAME: process.env.NAME,
+  API_KEY: process.env.API_KEY,
+  URL: process.env.URL
   
 };
