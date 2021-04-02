@@ -1,0 +1,40 @@
+{
+  "name": "mijn-portfolio-website",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon node --experimental-modules --es-module-specifier-resolution=node index.js",
+    "server": "npm start",
+    "frontend": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \" npm run frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KLisabeth/mijn-portfolio-website.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Kateryna Lisabeth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KLisabeth/mijn-portfolio-website/issues"
+  },
+  "homepage": "https://github.com/KLisabeth/mijn-portfolio-website#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.3",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.6.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
