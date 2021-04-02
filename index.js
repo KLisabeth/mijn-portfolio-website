@@ -3,6 +3,8 @@ import dotenv from 'dotenv';
 import mongoose from "mongoose";
 import adminRoute from './backend/routes/adminRoute.js';
 import profileRoute from './backend/routes/profileRoute.js';
+import projectRoute from './backend/routes/projectRoute.js';
+import blogRoute from './backend/routes/blogRoute.js';
 dotenv.config();
 const app = express();
 
@@ -22,7 +24,9 @@ app.use(express.urlencoded({ extended: true }));
 
 
 app.use("/api/admin", adminRoute);
-app.use("/api/profile", profileRoute)
+app.use("/api/profile", profileRoute);
+app.use("/api/project", projectRoute);
+app.use("/api/blog", blogRoute)
 
 const port = process.env.PORT;
 
