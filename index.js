@@ -6,6 +6,7 @@ import profileRoute from './backend/routes/profileRoute.js';
 import projectRoute from './backend/routes/projectRoute.js';
 import blogRoute from './backend/routes/blogRoute.js';
 import messageRoute from './backend/routes/messageRoute.js';
+import path from "path"
 dotenv.config();
 const app = express();
 
@@ -33,6 +34,8 @@ app.use ("/api/message", messageRoute)
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
 });
+const __dirname = path.resolve();
+app.use('/uploads', express.static(path.join(__dirname, '/uploads')));
 
 const port = process.env.PORT;
 
