@@ -20,7 +20,6 @@ code {
   max-height: 100%;
   padding: 30px;
   background-color: #282c34;
-  margin-bottom: 10px;
 }
 
 .about_content {
@@ -92,6 +91,46 @@ code {
   font-size: 30px;
   font-weight: 500;
 }
+/*Languages page*/
+
+.language-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #282c34;
+  padding: 10px;
+}
+
+.language-container h3 {
+  text-align: center;
+  font-family: "Playfair Display";
+  margin: 20px auto;
+  font-size: 42px;
+  background: -webkit-linear-gradient( #6de7f7, #3d5deb);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.languages {
+  float: inline-start;
+  width: 100%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.languageDescription {
+  text-align: center;
+  display: inline-block;
+  max-height: 150px;
+  max-width: 150px;
+  margin: 40px;
+}
+
+.languageDescription img {
+  max-height: 80px;
+  max-width: 80px;
+}
 
 @media screen and (max-width: 990px) {
   /*About-page*/
@@ -160,6 +199,27 @@ code {
     font-size: 19px;
     padding: 5px;
   }
+  /*Language-page*/
+  .languages {
+    float: inline-start;
+    width: 100%;
+    margin: 2px auto;
+    padding: 2px;
+  }
+  .language-container h3 {
+    font-size: 30px;
+  }
+
+  .languageDescription {
+    max-height: 90px;
+    max-width: 90px;
+    margin: 12px;
+  }
+  
+  .languageDescription img {
+    max-height: 35px;
+    max-width: 35px;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -194,6 +254,28 @@ code {
   .about_btn {
     font-size: 15px;
   }
+
+  /*Language-page*/
+  .languages {
+    float: inline-start;
+    width: 100%;
+    margin: 2px auto;
+    padding: 2px;
+  }
+  .language-container h3 {
+    font-size: 30px;
+  }
+
+  .languageDescription {
+    max-height: 70px;
+    max-width: 70px;
+    margin: 20px;
+  }
+  
+  .languageDescription img {
+    max-height: 30px;
+    max-width: 30px;
+  }
 }
 
 @media screen and (max-width: 280px) {
@@ -224,5 +306,26 @@ code {
   }
   .about_btn {
     font-size: 12px;
+  }
+  /*Languages*/
+  .languages {
+    float: inline-start;
+    width: 100%;
+    margin: 8px auto;
+    padding: 5px;
+  }
+  .languageDescription {
+    max-height: 70px;
+    max-width: 70px;
+    margin: 20px;
+  }
+ 
+  .languageDescription img {
+    max-height: 30px;
+    max-width: 30px;
+  }
+
+  .language-container h3 {
+    font-size: 20px;
   }
 }

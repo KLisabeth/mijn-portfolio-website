@@ -103,7 +103,7 @@
     background-color: #282c34;
     max-height: 150px;
     min-height: 60px;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
