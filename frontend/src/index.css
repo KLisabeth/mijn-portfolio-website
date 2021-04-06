@@ -162,6 +162,7 @@ code {
   margin: -15% auto;
   padding: 1%;
   background: #303742fd;
+  border: 0.1rem solid #636363;
 }
 
 .form-label {
@@ -171,7 +172,7 @@ code {
   font-weight: 200;
   font-size: 16px;
 }
-
+.admin_btn,
 .contact_btn {
   width: 100%;
   border-radius: 50px;
@@ -193,7 +194,7 @@ code {
   font-size: 1.5em;
   margin-left: 5%;
 }
-
+.admin_btn:hover,
 .contact_btn:hover {
   background: linear-gradient(to top left, #4bd6e9, #0c6e86, #0b36f5);
   color: #f0e5ec;
@@ -296,6 +297,40 @@ code {
 .blog_article {
   padding: 25px;
 }
+/*Signin-page*/
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid #858585;
+  border-radius: 0.5rem;
+  margin: 2rem 0rem 4rem 0rem;
+  padding: 3rem;
+  background-color: #282c34;
+}
+
+.form_control {
+  max-width: 100%;
+}
+
+
+.signin {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  background: url("./assets/images/img2.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #282c34;
+  margin-top: -2px;
+}
+
+.text_center {
+  color: #06b8af;
+  text-align: center;
+}
+
 
 @media screen and (max-width: 990px) {
   /*About-page*/
