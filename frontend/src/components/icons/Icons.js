@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import './icons.css';
 import Nav from 'react-bootstrap/Nav'
 import { GoMarkGithub } from "react-icons/go";

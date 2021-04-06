@@ -7,8 +7,10 @@ import Icons from "../components/icons/Icons";
 
 
 function Contact(props) {
+   // eslint-disable-next-line
   const [email, setEmail] = useState();
-  const [coment, setComent] = useState();
+   // eslint-disable-next-line
+  const [comment, setComment] = useState();
 
   
 
@@ -36,7 +38,7 @@ function Contact(props) {
                   id="text-area"
                   as="textarea"
                   rows={3}
-                  onChange={(e) => setComent(e.target.value)}
+                  onChange={(e) => setComment(e.target.value)}
                 />
               </Form.Group>
               <br />
