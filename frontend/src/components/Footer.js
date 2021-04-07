@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="copyright">
-        Copyright © 2020 KLisabeth. All rights reserved.
+        Copyright © 2021 KLisabeth. All rights reserved.
       </div>
     </div>
   );

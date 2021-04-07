@@ -1,7 +1,7 @@
 // SIGN IN
 export const SIGNIN_REQUEST = "SIGNIN_SUCCESS";
 export const SIGNIN_SUCCESS = "SIGNIN_SUCCESS";
-export const SIGNIN_ERROR = "SIGNIN_ERROR";
+export const SIGNIN_FAIL = "SIGNIN_FAIL";
 
 // SIGN OUT
-export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS";
+export const SIGNOUT = "SIGNOUT";

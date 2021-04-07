@@ -1,20 +1,20 @@
 const {
   SIGNIN_REQUEST,
   SIGNIN_SUCCESS,
-  SIGNIN_ERROR,
+  SIGNIN_FAIL,
 
-  LOGOUT_SUCCESS,
+  SIGNOUT,
 } = require("../constants/authConstants");
 
-function adminSigninReducer(state = {}, action) {
+export const adminSigninReducer = (state = {}, action) => {
   switch (action.type) {
     case SIGNIN_REQUEST:
       return { loading: true };
     case SIGNIN_SUCCESS:
-      return { loading: false, auth: action.payload };
-    case SIGNIN_ERROR:
+      return { loading: false , auth: action.payload };
+    case SIGNIN_FAIL:
       return { loading: false, error: action.payload };
-    case LOGOUT_SUCCESS:
+    case SIGNOUT:
       return {};
     default:
       return state;

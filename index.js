@@ -7,6 +7,7 @@ import projectRoute from './backend/routes/projectRoute.js';
 import blogRoute from './backend/routes/blogRoute.js';
 import messageRoute from './backend/routes/messageRoute.js';
 import path from "path"
+import bodyParser from 'body-parser'
 dotenv.config();
 const app = express();
 

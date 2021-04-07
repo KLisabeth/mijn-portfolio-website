@@ -3,11 +3,13 @@ import thunk from "redux-thunk";
 
 import adminSigninReducer from "./store/reducers/authReducers";
 
-const initialState = { adminSignin: {
-  auth: localStorage.getItem('auth')
-    ? JSON.parse(localStorage.getItem('auth'))
-    : null,
-},};
+const auth = localStorage.getItem('auth')
+  ? JSON.parse(localStorage.getItem('auth'))
+  : null;
+
+const initialState = { adminSignin: {auth}};
+
+
 const reducer = combineReducers({
   adminSignin: adminSigninReducer
 });

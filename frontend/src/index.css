@@ -330,6 +330,20 @@ code {
   color: #06b8af;
   text-align: center;
 }
+/*Admin-page*/
+.admin_page .link_title{
+  color: #04bbf3;
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 22px; 
+}
+
+.admin_page {
+  height: 100vh;
+  padding: 5% auto;
+  background-color: #282c34;
+
+}
 
 
 @media screen and (max-width: 990px) {
