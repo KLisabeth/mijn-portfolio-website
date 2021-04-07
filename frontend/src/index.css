@@ -325,7 +325,7 @@ code {
   background-color: #282c34;
   margin-top: -2px;
 }
-
+.title,
 .text_center {
   color: #06b8af;
   text-align: center;
@@ -339,10 +339,17 @@ code {
 }
 
 .admin_page {
-  height: 100vh;
+  min-height: 100%;
   padding: 5% auto;
   background-color: #282c34;
 
+}
+
+.table ,th  ,td, label{
+  color: #c5c0c0;
+}
+.about-me{
+  color: #2d74f8;
 }
 
 
