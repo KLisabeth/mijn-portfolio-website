@@ -2,6 +2,7 @@ import { createStore, combineReducers, compose, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
 import adminSigninReducer from "./store/reducers/authReducers";
+import { blogDeleteReducer, blogListReducer, blogSaveReducer } from "./store/reducers/blogReducers";
 import { profileEditReducer, profileListReducer } from "./store/reducers/profileReducers";
 
 const auth = localStorage.getItem('auth')
@@ -16,6 +17,10 @@ const reducer = combineReducers({
 
   profileList: profileListReducer,
   profileEdit: profileEditReducer,
+
+  blogList: blogListReducer,
+  blogSave: blogSaveReducer,
+  blogDelete: blogDeleteReducer,
 });
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(

@@ -337,9 +337,9 @@ code {
   font-weight: 400;
   font-size: 22px; 
 }
-
+.edit_page,
 .admin_page {
-  min-height: 100%;
+  min-height: 100vh;
   padding: 5% auto;
   background-color: #282c34;
 

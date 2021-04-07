@@ -4,6 +4,7 @@ import AdminRoute from "./AdminRoute";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Admin from "./pages/admin/Admin";
+import CreateEditBlogs from "./pages/admin/CreateEditBlogs";
 import Blogs from "./pages/Blogs";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
@@ -21,6 +22,7 @@ function App() {
 <Route path="/bloglist"  component={Blogs}/>
 <Route path="/signin"  component={Signin}/>
 <AdminRoute path="/admin" exact={true} component={Admin}/>
+<AdminRoute exact path="/blogs" component={CreateEditBlogs} />
 </Switch>
     <Footer/>
     </BrowserRouter>
