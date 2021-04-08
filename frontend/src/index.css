@@ -24,6 +24,7 @@ code {
   max-height: 100%;
   padding: 30px;
   background-color: #282c34;
+  margin-top: -3px;
 }
 
 .about_content {
@@ -104,6 +105,7 @@ code {
   height: 100%;
   background-color: #282c34;
   padding: 10px;
+  margin-top: -2px;
 }
 
 .language-container h3 {
@@ -195,8 +197,8 @@ code {
 
 .envelop {
   float: left;
-  font-size: 1.5em;
-  margin-left: 5%;
+  font-size: 1.3em;
+  margin: 3px auto;
 }
 .admin_btn:hover,
 .contact_btn:hover {
