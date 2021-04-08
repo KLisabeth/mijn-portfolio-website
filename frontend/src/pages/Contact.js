@@ -1,18 +1,30 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { Form } from "react-bootstrap";
 import { ImEnvelop } from "react-icons/im";
 import Icons from "../components/icons/Icons";
+import Axios from "axios";
 
 
-
-
-function Contact(props) {
-   // eslint-disable-next-line
+function Contact() {
   const [email, setEmail] = useState();
-   // eslint-disable-next-line
   const [comment, setComment] = useState();
 
   
+ const submitHandler = async () => {
+ const msg = { email, comment };
+       await Axios.post(
+        "/api/message",
+        msg
+      )
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      });
+};
+
 
   return (
     <div className="contact">
@@ -21,7 +33,7 @@ function Contact(props) {
         <Icons/>
         <div>
           <div className="contact_form_wrap">
-            <Form bg="dark" autoComplete="off" className="contact_form" >
+            <Form bg="dark" autoComplete="off" className="contact_form" onSubmit={submitHandler}>
               <Form.Group>
                 <Form.Label htmlFor="user-email">
                   Email

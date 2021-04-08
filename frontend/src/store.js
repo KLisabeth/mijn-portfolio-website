@@ -25,8 +25,7 @@ const reducer = combineReducers({
 
   projectList: projectListReducer,
   projectSave: projectSaveReducer,
-  projectDelete: projectDeleteReducer,
- 
+  projectDelete: projectDeleteReducer
 });
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
