@@ -13,6 +13,10 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+.banner {
+  background-color: #282c34;
+  margin-top: -2px;
+}
 
 /*About page*/
 

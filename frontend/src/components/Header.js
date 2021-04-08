@@ -6,6 +6,7 @@ import { VscChromeClose } from "react-icons/vsc";
 import { useDispatch, useSelector } from "react-redux";
 import { signout } from "../store/actions/authActions";
 import Logo from "./Logo";
+import Arrow from "./arrow/Arrow";
 
 function Header() {
   const [isActive, setActive] = useState(`false`);
@@ -28,6 +29,7 @@ function Header() {
      {auth && auth.isAdmin ? (
       <nav className="Navbar">
         <div className="content">
+        <Arrow />
           <div id="logo">
             <Link to="/"><Logo/></Link>
           </div>
@@ -61,6 +63,7 @@ function Header() {
      ) : (
         <nav className="Navbar">
         <div className="content">
+        <Arrow/>
           <div className="logo">
             <Link to="/"><Logo/></Link>
 

@@ -9,6 +9,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "emoji-dictionary": "^1.0.11",
+    "particles-bg": "^2.5.5",
     "react": "^17.0.2",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.2",
@@ -19,6 +20,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "react-syntax-highlighter": "^15.4.3",
+    "react-tsparticles": "^1.25.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "remark-gfm": "^1.0.0",
@@ -50,8 +52,8 @@
   },
   "proxy": {
     "/*.html": {
-        "target": "http://127.0.0.1:6000",
-        "changeOrigin": true
+      "target": "http://127.0.0.1:6000",
+      "changeOrigin": true
     }
-}
+  }
 }

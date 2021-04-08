@@ -32,7 +32,7 @@
   font-size: 25px;
   font-weight: 500;
   left: 10px;
-  margin-left: 40px;
+  margin-left: 60px;
   color: #837D7D;
   text-decoration: none;
   cursor: pointer;
@@ -139,6 +139,17 @@
   color: #04d7f3;
   margin: 10px auto;
 }
+/*Script*/
+.script{
+  position: absolute;
+  margin-top: -30%;
+  font-family: "Playfair Display";
+  font-size: 55px;
+  color: #11d4e2;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
 
 @media screen and (max-width: 990px) {
 
@@ -213,6 +224,9 @@
     right: 0px;
     top: 10px;
   }
+  .script{
+    font-size: 35px;
+  }
 }
 
 @media screen and (max-width: 360px) {
@@ -236,6 +250,9 @@
   /*Footer*/
   .copyright {
     font-size: 12px;
+  }
+  .script{
+    font-size: 20px;
   }
 
 }
