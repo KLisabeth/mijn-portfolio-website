@@ -9,7 +9,8 @@
     "start": "nodemon node --experimental-modules --es-module-specifier-resolution=node index.js",
     "server": "npm start",
     "frontend": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run server\" \" npm run frontend\""
+    "dev": "concurrently \"npm run server\" \" npm run frontend\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTIONS=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "repository": {
     "type": "git",
