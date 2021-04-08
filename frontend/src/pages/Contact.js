@@ -9,18 +9,21 @@ function Contact() {
   const [email, setEmail] = useState();
   const [comment, setComment] = useState();
 
-  
- const submitHandler = async () => {
-  try {
-    await Axios.post(
-      "/api/message",
-      { email, comment }
-    ).then((response) => {
-      console.log(response);})
-  } catch (err) {
-    console.error(err);;
-  }
-};
+
+const submitHandler = async (e) => {
+  e.preventDefault();
+  await Axios.post(
+          "/api/message",
+          { email, comment }
+        ).then((response)=>{
+    if (response.data.status === 'success') {
+      alert("Message Sent."); 
+      this.resetForm()
+    } else if(response.data.status === 'fail') {
+      alert("Message failed to send.")
+    }
+  })
+}
 
   return (
     <div className="contact">
