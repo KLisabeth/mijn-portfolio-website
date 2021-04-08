@@ -11,20 +11,16 @@ function Contact() {
 
   
  const submitHandler = async () => {
- const msg = { email, comment };
-       await Axios.post(
-        "/api/message",
-        msg
-      )
-      .then(response => response.json())
-      .then(data => {
-        console.log('Success:', data);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      });
+  try {
+    await Axios.post(
+      "/api/message",
+      { email, comment }
+    ).then((response) => {
+      console.log(response);})
+  } catch (err) {
+    console.error(err);;
+  }
 };
-
 
   return (
     <div className="contact">

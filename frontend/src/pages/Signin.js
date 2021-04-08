@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Form from "react-bootstrap/Form";
 import { VscShield } from "react-icons/vsc";
 import { useDispatch, useSelector } from 'react-redux';
@@ -18,14 +18,11 @@ const dispatch = useDispatch();
 const submitHandler = async (e) => {
   e.preventDefault();
   dispatch(signin(email, password));
-  setTimeout(() => {
-    window.location.reload();
-  }, 5000); 
 };
 
-React.useEffect(() => {
+useEffect(() => {
   if (auth) 
-  props.history.push("/admin");
+  props.history.push("/");
   
   }, [auth, props.history]);
     return (
