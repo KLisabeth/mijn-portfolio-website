@@ -3,6 +3,7 @@ import thunk from "redux-thunk";
 
 import adminSigninReducer from "./store/reducers/authReducers";
 import { blogDeleteReducer, blogListReducer, blogSaveReducer } from "./store/reducers/blogReducers";
+import messageReducer from "./store/reducers/messageReducers";
 import { profileEditReducer, profileListReducer } from "./store/reducers/profileReducers";
 import { projectDeleteReducer, projectListReducer, projectSaveReducer } from "./store/reducers/projectReducers";
 
@@ -25,7 +26,9 @@ const reducer = combineReducers({
 
   projectList: projectListReducer,
   projectSave: projectSaveReducer,
-  projectDelete: projectDeleteReducer
+  projectDelete: projectDeleteReducer,
+
+  messageSend: messageReducer
 });
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(

@@ -284,13 +284,14 @@ code {
   min-height: 100vh;
   background: #282c34;
   margin-top: -2px;
+  padding: 20px auto;
 }
 
 .blog-wrap {
   border-radius: 1rem;
   margin: 2rem;
   padding: 1rem;
-  background: #f8f7f7f8;
+  background: #f7f4f4f8;
 }
 
 .blog-container {
@@ -301,7 +302,7 @@ code {
 }
 
 .blog_article {
-  padding: 25px;
+  padding: 15px;
 }
 /*Signin-page*/
 

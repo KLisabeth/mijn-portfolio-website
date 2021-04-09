@@ -6,6 +6,7 @@ import { Row, Col, Container, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { listProjects } from "../store/actions/projectActions";
 import LoadingNotice from "../components/notice/LoadingNotice";
+import Footer from "../components/Footer";
 
 function Projects() {
   const projectList = useSelector((state) => state.projectList);
@@ -17,6 +18,7 @@ function Projects() {
   }, [dispatch]);
 
   return (
+    <>
     <div className="project">
       <h1 className=" project_h1">My Projects</h1>
       {loading === false ? (
@@ -65,6 +67,8 @@ function Projects() {
       
     )}
     </div>
+    <Footer/>
+    </>
   );
 }
 

@@ -14,6 +14,9 @@ const [password, setPassword] = useState("");
 const adminSignin = useSelector((state) => state.adminSignin);
 const {loading, auth, error } = adminSignin;
 const dispatch = useDispatch();
+  const redirect = props.location.search && props.location.search.indexOf('redirect') >= 0
+  ? props.location.search.split('=')[1]
+  : '/';
 
 const submitHandler = async (e) => {
   e.preventDefault();
@@ -22,9 +25,11 @@ const submitHandler = async (e) => {
 
 useEffect(() => {
   if (auth) 
-  props.history.push("/");
+  {props.history.push(redirect);}
   
-  }, [auth, props.history]);
+  }, [auth, props.history, redirect]);
+
+
     return (
         <div className="signin">
       <div className="form_container">
