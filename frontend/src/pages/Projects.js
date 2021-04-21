@@ -46,11 +46,11 @@ function Projects() {
                   {project.description}
                   </p>
 
-                  <Button variant="outline-primary"  href={project.web_url}>
+                  <Button variant="outline-primary" target="_blank" href={project.web_url}>
                     Website <CgWebsite />
                   </Button>
                   <br />
-                  <Button href={project.git_hub}>
+                  <Button target="_blank" href={project.git_hub}>
                     Git-hub <AiFillGithub />
                   </Button>
                 </div>

@@ -57,7 +57,7 @@ link: https://reactjs.com
 
   return (
     <div className="blog-page">
-      <h1 className=" blog_title">My Blogs</h1>
+      {/* <h1 className=" blog_title">My Blogs</h1> */}
       {loading === false ? (
         <div>
           <h6 className="text-danger justify-content-center text-center">
@@ -71,7 +71,7 @@ link: https://reactjs.com
               <div className="blog-container" key={blog._id}>
                 <div className="blog-wrap">
                   <h1 className="blog_title">{blog.title}</h1>
-                  <p>{blog.created}</p>
+                  <p>Posted {blog.created}</p>
                   <ReactMarkdown
                     plugins={[[gfm, { singleTilde: false }]]}
                     children={markdown}

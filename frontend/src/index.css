@@ -213,7 +213,7 @@ code {
   min-height: 100vh;
   padding: 5% auto;
   background: #282c34;
-  margin-top: -3px;
+  margin-top: -13px;
 }
 
 .project_screenshot {
@@ -260,6 +260,7 @@ code {
 
 .flip_card_back a {
   margin: 1%;
+  width: 80%;
 }
 
 .blog_title, .project_h1 {
@@ -271,6 +272,7 @@ code {
   font-family: "Aleo";
   font-weight: 700;
   text-align: center;
+  margin-top: 10px;
 }
 
 .project_p {
@@ -283,16 +285,16 @@ code {
 .blog-page {
   min-height: 100vh;
   background: #282c34;
-  margin-top: -2px;
+  margin-top: -35px;
   padding: 20px auto;
 }
 
-.blog-wrap {
-  border-radius: 1rem;
+ .blog-wrap {
+  /* border-radius: 1rem; */
   margin: 2rem;
   padding: 1rem;
-  background: #f7f4f4f8;
-}
+  /* background: #f7f4f4f8; */
+} 
 
 .blog-container {
   width: 100%;
@@ -300,9 +302,10 @@ code {
   border: none;
   font-size: 17px;
 }
-
+.blog-wrap p,
 .blog_article {
-  padding: 15px;
+  padding: 5px;
+  color: #f7f4f4ef;
 }
 /*Signin-page*/
 
